@@ -3,7 +3,7 @@
 This MATLAB project generates an audio file from a sequence of musical notes and displays a spectrogram of the generated audio. The notes are played with specified frequencies and durations, and an echo effect is added to enhance the sound.
 - All signal processing techniques are based on [John G. Proakis's DSP Book](https://elibrary.pearson.de/book/99.150005/9781292038162).
 - This was my project for the DSP LAB in March 2020.
-- Each note (each single tone) is based on the piano middle octave, with some conventions.
+- Each note (each single tone) is based on the piano's middle octave, with some conventions.
 - The note I've used is a simple piece for naive piano players. Unfortunately, the only picture that I can reach is one that I've uploaded. You can apply each note based on the middle piano octave to the function according to your desire.
 <div style="text-align: center;">
     <img src="The_original_note.jpg" alt="The original note" width="300">
@@ -30,11 +30,18 @@ Generates an audio file from a sequence of musical notes.
 
 #### Syntax
 
-```matlab
+```Matlab
 generateNoteAudio(fs, duration, noteVect, noteDuration, outputFilename)
 ```
 
-**noteVect** is based on the piano middle octave.
+    ##### Parameters:
+    -  **fs** - Sampling frequency (default: 30000)
+    -  **duration** - Duration of the audio in seconds (default: 19)
+    -  **noteVect** - Vector of note indices (default: provided below)
+    -  **noteDuration** - Duration of each note in seconds (default: 0.2)
+    -  **outputFilename** - Name of the output audio file (default: 'NoteAudio.wav')
+
+
 
 
 [Find me on LinkedIn](https://www.linkedin.com/in/omid-davoudnia-8b071a236)
