@@ -37,7 +37,7 @@ generateNoteAudio(fs, duration, noteVect, noteDuration, outputFilename)
     ##### Parameters:
     -  **fs** - Sampling frequency (default: 30000)
     -  **duration** - Duration of the audio in seconds (default: 19)
-    -  **noteVect** - Vector of note indices (default: provided below)
+    -  **noteVect** - Vector of note indices (default: [8 10 12 11 ... 1 1 1])
     -  **noteDuration** - Duration of each note in seconds (default: 0.2)
     -  **outputFilename** - Name of the output audio file (default: 'NoteAudio.wav')
 
